@@ -10,10 +10,10 @@ import { ActivityService } from '../../shared/services/activity.service';
   styleUrl: './activity-item.component.css'
 })
 export class ActivityItemComponent {
-  private ActivityService = inject(ActivityService);
+  ActivityService = inject(ActivityService);
   data = input<Activity>();
 
   removeActivityHandler() {
-      this.ActivityService.removeActivity((this.data() as Activity).title);
+    this.ActivityService.removeActivity((this.data() as Activity).title);
     }
 }

@@ -10,10 +10,10 @@ import { TreatService } from '../../shared/services/treat.service';
   styleUrl: './treat-item.component.css'
 })
 export class TreatItemComponent {
-  private treatService = inject(TreatService);
+  treatService = inject(TreatService);
   data = input<Treat>();
 
-  removeTreatHandler() {
+removeTreatHandler() {
     this.treatService.removeTreat((this.data() as Treat).title);
   }
 }

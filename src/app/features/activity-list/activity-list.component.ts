@@ -11,7 +11,7 @@ import { ActivityService } from '../../shared/services/activity.service';
   styleUrl: './activity-list.component.css'
 })
 export class ActivityListComponent {
-  private activityService = inject(ActivityService)
+  activityService = inject(ActivityService)
 
   activities = this.activityService.getactivities()
 

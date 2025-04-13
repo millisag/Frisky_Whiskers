@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { TreatFormComponent } from './treat-form.component';
 
 describe('TreatFormComponent', () => {

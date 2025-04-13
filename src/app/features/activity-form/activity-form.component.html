@@ -1,1 +1,22 @@
-<p>activity-form works!</p>
+<form (ngSubmit)="addActivityHandler()" >
+  <div class="form-group">
+    <input
+      name="title"
+      type="text"
+      [(ngModel)]="title"
+      placeholder="Activity Title"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <input
+      name="duration"
+      type="number"
+      [(ngModel)]="duration"
+      placeholder="Activity Duration (mins)"
+      required
+    />
+  </div>
+  <button class="button-primary" [disabled]="!title || duration <= 0">Add Activity</button>
+  <button class="button-clear" type="button" (click)="resetFormHandler()">Reset</button>
+</form>
