@@ -24,12 +24,17 @@ export class ActivityService {
     return this.activities.asReadonly()
   }
 
-  addActivity(t: string, d: number) {
-    this.activities.update((t: any) => [...t, {title: t, duration: d}])
+  addActivity(title: string, duration: number) {
+    this.activities.update((currentActivities: Activity[]) => [
+      ...currentActivities,
+      { id: crypto.randomUUID(), title, duration, notes: '' }
+    ]); //Add random ID
   }
 
-  removeActivity(t: string) {
-    this.activities.update((t: any) => t.filter((t: any) => t.title !== t))
+  removeActivity(titleToRemove: string) {
+    this.activities.update((activityList: Activity[]) =>
+      activityList.filter((activity: Activity) => activity.title !== titleToRemove)
+    );
   }
 }
 

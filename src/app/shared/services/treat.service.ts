@@ -28,11 +28,16 @@ export class TreatService {
     return this.treats.asReadonly()
   }
 
-  addTreat(t: string, b: string, ty: string, c: number) {
-    this.treats.update((t: any) => [...t, {title: t, brand: b, type: ty, calories: c}])
+  addTreat(id: number, title: string, brand: string, type: string, calories: number) {
+    this.treats.update((currentTreats: Treat[]) => [
+      ...currentTreats,
+      { id: crypto.randomUUID(), title, brand: '', type: '', calories: 0}
+    ]); //Add random ID
   }
 
-  removeTreat(t: string) {
-    this.treats.update((t: any) => t.filter((t: any) => t.title !== t))
+  removeTreat(titleToRemove: string) {
+    this.treats.update((treatList: Treat[]) =>
+      treatList.filter((treat: Treat) => treat.title !== titleToRemove)
+    );
   }
 }
