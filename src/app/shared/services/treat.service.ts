@@ -12,7 +12,7 @@ export class TreatService {
       brand: 'Sheba',
       type: 'wet', // e.g., wet or dry
       calories: 110, // calories per treat
-      notes: ''
+
     },
     {
       id: '2',
@@ -20,7 +20,7 @@ export class TreatService {
       brand: 'Fancy Feast',
       type: 'dry', // e.g., wet or dry
       calories: 50, // calories per treat
-      notes: ''
+
     }
   ]);
 

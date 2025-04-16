@@ -1,0 +1,15 @@
+<div class="notes">
+  @if (!isEditing) {
+    <div>
+      <em>{{ editableNotes || 'Add a note here.' }}</em>
+      <button (click)="startEditing()">Edit</button>
+    </div>
+  } @else {
+    <div>
+      <textarea [(ngModel)]="editableNotes"></textarea>
+      <button (click)="save()">Save</button>
+      <button (click)="cancel()">Cancel</button>
+      <button (click)="delete()">Delete</button>
+    </div>
+  }
+</div>

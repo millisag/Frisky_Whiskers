@@ -10,13 +10,13 @@ export class ActivityService {
       id: '1',
       title: 'Played with feather toy',
       duration: 30, // in minutes,
-      notes: ''
+
     },
     {
       id: '2',
       title: 'Chased laser pointer',
       duration: 15, // in minutes,
-      notes: ''
+
     }
   ]);
 
@@ -27,7 +27,7 @@ export class ActivityService {
   addActivity(title: string, duration: number) {
     this.activities.update((currentActivities: Activity[]) => [
       ...currentActivities,
-      { id: crypto.randomUUID(), title, duration, notes: '' }
+      { id: crypto.randomUUID(), title, duration}
     ]); //Add random ID
   }
 

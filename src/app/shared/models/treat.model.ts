@@ -4,5 +4,4 @@ export interface Treat {
   brand: string;
   type: string; // e.g., wet or dry
   calories: number; // calories per treat
-  notes?: string;
 }

@@ -17,7 +17,7 @@ import { TreatService } from '../../shared/services/treat.service';
    type!: string;
 
   addTreatHandler(){
-    this.treatService.addTreat(this.title, this.brand, this.type, this.calories);
+    this.treatService.addTreat(Date.now(), this.title, this.brand, this.type, this.calories); // Use Date.now() as an ID generator
     this.resetFormHandler()
   }
   removeTreatHandler(title: string): void {
