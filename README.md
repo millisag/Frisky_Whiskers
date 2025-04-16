@@ -1,6 +1,6 @@
 # FriskyWhiskers
 
-To add: edit functionality for treat and activity components, possibly text box for notes; toggle functionality for switching between treat and activity components
+To add: header component, css/styling, and toggle functionality for switching between treat and activity components
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
 
