@@ -1,12 +1,12 @@
 import { Component, inject, input } from '@angular/core';
 import { Treat } from '../../shared/models/treat.model';
 import { TreatService } from '../../shared/services/treat.service';
-import { SharedModule } from '../../shared/shared.module';
+import { NotesComponent } from '../../shared/notes/notes.component';
 
 @Component({
   standalone: true,
   selector: 'app-treat-item',
-  imports: [SharedModule],
+  imports: [NotesComponent],
   templateUrl: './treat-item.component.html',
   styleUrl: './treat-item.component.css'
 })
