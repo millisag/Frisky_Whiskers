@@ -12,6 +12,7 @@ import { NotesComponent } from './notes/notes.component';
   exports: [
     CommonModule,
     FormsModule,
+    NotesComponent,
   ],
 })
 export class SharedModule {}
