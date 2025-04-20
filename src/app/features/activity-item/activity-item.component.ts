@@ -1,12 +1,12 @@
 import { Component, inject, input } from '@angular/core';
 import { Activity } from '../../shared/models/activity.model';
 import { ActivityService } from '../../shared/services/activity.service';
-import { NotesComponent } from "../../shared/notes/notes.component";
+import { SharedModule } from '../../shared/shared.module';
 
 @Component({
   standalone: true,
   selector: 'app-activity-item',
-  imports: [NotesComponent],
+  imports: [SharedModule],
   templateUrl: './activity-item.component.html',
   styleUrl: './activity-item.component.css'
 })

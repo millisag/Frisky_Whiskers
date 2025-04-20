@@ -1,11 +1,12 @@
 
 import { Component, inject } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { TreatService } from '../../shared/services/treat.service';
+import { SharedModule } from '../../shared/shared.module';
 
  @Component({
+   standalone: true,
    selector: 'app-treat-form',
-   imports: [FormsModule],
+   imports: [SharedModule],
    templateUrl: './treat-form.component.html',
    styleUrl: './treat-form.component.css'
  })

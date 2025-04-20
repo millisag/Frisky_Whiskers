@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { ActivityService } from '../../shared/services/activity.service';
+import { SharedModule } from '../../shared/shared.module';
 
  @Component({
+   standalone: true,
    selector: 'app-activity-form',
-   imports: [FormsModule],
+   imports: [SharedModule],
    templateUrl: './activity-form.component.html',
    styleUrl: './activity-form.component.css'
  })

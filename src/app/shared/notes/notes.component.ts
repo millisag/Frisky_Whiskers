@@ -1,10 +1,10 @@
 import { Component, Output, EventEmitter, input } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { SharedModule } from '../shared.module';
 
 @Component({
   standalone: true,
   selector: 'app-notes',
-  imports: [FormsModule],
+  imports: [SharedModule],
   templateUrl: './notes.component.html',
   styleUrl: './notes.component.css'
 })
