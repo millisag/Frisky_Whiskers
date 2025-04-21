@@ -1,0 +1,20 @@
+.content-row {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .content-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  app-treat,
+  app-activity {
+    width: 90%; 
+    max-width: 500px;
+  }
+}

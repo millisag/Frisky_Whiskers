@@ -1,0 +1,29 @@
+.treat-list {
+  margin-top: 450px;
+  background-color: lightblue;
+  border: 1px solid lightseagreen;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.treat-list h2 {
+  font-size: 1.75rem;
+  margin-bottom: 4px;
+  color: red;
+  text-align: center;
+}
+
+.treat-list p {
+  font-size: 1rem;
+  color: #444;
+  text-align: center;
+}
+
